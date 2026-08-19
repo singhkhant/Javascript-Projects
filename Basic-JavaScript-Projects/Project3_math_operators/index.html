@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project 2: Functions</title>
+    <style>
+        td {
+            padding-bottom: 30px; /* Adjust this number to add more or less space */
+        }
+    </style>
+</head>
+<body>    
+    <h1>Math operators Assignment</h1> 
+    <table width="50%">
+        <tr>
+            <td>
+                <!-- Combining the equation and the answer ID on one line using a span -->
+                <h3>Addition</h3>
+                <p>15 + 25 = <b id="Add"></b></p>
+                <button onclick="addition_Function()">Check Result</button>
+            </td>
+            <td>
+                <h3>Subtraction</h3>
+                <p>36 - 12 = <b id="Subtract"></b></p>
+                <button onclick="subtraction_Function()">Check Result</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Multiplication</h3>
+                <p>48 * 2 = <b id="Multiply"></b></p>
+                <button onclick="multiplication_Function()">Check Result</button>
+            </td>
+            <td>
+                <h3>Division</h3>
+                <p>44 / 11 = <b id="Divide"></b></p>
+                <button onclick="division_Function()">Check Result</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Multiple Operations</h3>
+                <p>(12 + 16) * 2 / 4 - 2 = <b id="Math"></b></p>
+                <button onclick="more_Math()">Check Result</button>
+            </td>
+            <td>
+                <h3>Modulus</h3>
+                <p>When 27 / 12, Remainder = <b id="Modulus"></b></p>
+                <button onclick="modulus_Operator()">Check Result</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Negation</h3>
+                <p>Negative form of 12 = <b id="Negate"></b></p>
+                <button onclick="negation_Operator()">Check Result</button>
+            </td>
+            <td>
+                <p>A random number between 0 and 100: <b id="Math_Object"></b></p>
+                <button onclick="math_Object_Function()">Generate Random Number</button>
+            </td>
+        </tr>
+    </table>
+
+    <!-- The script tag is at the bottom so document.write outputs below the table -->
+    <script src="JS/main.js"></script>
+</body>
+</html>
