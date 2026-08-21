@@ -51,17 +51,18 @@ function math_Object_Function() {
     document.getElementById("Math_Object").innerHTML = random_number;
 }
 
-var Y = 10;
-Y++;
-// Put quotes around the text, and use + to join it with Y
-document.write("Increment of 10 is = " + Y);
+function Increment() { //Defining and naming the increment function
+    var userInput = document.getElementById("IncInput").value;      // Get the value the user typed into the input field
+    var value = Number(userInput);                                  // Convert that input into a Number
+    value++;                                                        // Add one to the value
+    document.getElementById("IncrementText").innerHTML = value;     // Print the result in the HTML <b> tag
+}
 
-// Adding a line break so the next sentence starts on a new line
-document.write("<br>"); 
-
-var Z = 13.62;
-Z--;
-// Put quotes around the text, and use + to join it with Z
-document.write("Decrement of 13.62 is = " + Z);
+function Decrement() {
+    var userInput = document.getElementById("DecInput").value;      // Get the value the user typed into the input field
+    var value = Number(userInput);                                  // Convert that input into a Number
+    value--;                                                        // Subtract one from the value
+    document.getElementById("DecrementText").innerHTML = value;     // Print the result in the HTML <b> tag
+}
 
 window.alert(Math.random());
