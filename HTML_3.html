@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Attributes Assignment</title>
+    <!-- Links to the JS file in the adjacent JavaScript folder -->
+    <script src="JavaScript/JavaScript_3.js" defer></script>
+    <link href="CSS/CSS_3.css" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Celestial Database</h1>
+    <p>Click on a celestial body to extract its data attribute.</p>
+
+    <ul>
+        <!-- The data-planet-type attribute stores custom information right in the HTML -->
+        <li onclick="displayCelestialInfo(this)" id="Terrestrial" data-planet-type="A Terrestrial planet">Earth</li>
+        <li onclick="displayCelestialInfo(this)" id="GasGiant" data-planet-type="A Gas giant">Jupiter</li>
+        <li onclick="displayCelestialInfo(this)" id="Star" data-planet-type="A G-type main-sequence star">The Sun</li>
+        <li onclick="displayCelestialInfo(this)" id="BlackHole" data-planet-type="A Supermassive black hole">Sagittarius A*</li>
+    </ul>
+
+    <h2 id="infoDisplay"></h2>
+
+</body>
+</html>
