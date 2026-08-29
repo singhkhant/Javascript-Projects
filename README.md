@@ -1,6 +1,6 @@
 # JavaScript Projects
 
-Some Small Projects 
+Some Small Projects I made as part of JavaScript Course
 
 ## Projects
 
